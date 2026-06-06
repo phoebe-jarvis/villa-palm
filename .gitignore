@@ -8,3 +8,6 @@ Thumbs.db
 *.MOV
 *.mov
 inspo/
+
+# Legacy output folder (index.html now lives at root)
+output/

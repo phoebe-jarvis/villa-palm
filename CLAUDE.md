@@ -5,14 +5,17 @@ A single-page HTML website for **Villa Palm**, a private villa rental in Kalkan,
 
 ## File structure
 ```
-/output/index.html      — the entire website (single HTML file, all CSS and JS inline)
-/images/                — all villa photos (JPEGs)
-/logo/                  — white logo.jpg and colour logo.jpg used in the nav
-/inspo/                 — empty (inspiration reference, not used in code)
+index.html          — the entire website (single HTML file, all CSS and JS inline)
+images/             — all villa photos (JPEGs)
+logo/               — white and colour logo variants
+vercel.json         — Vercel deployment config (cache headers for images/logo)
+README.md           — setup and deploy instructions
+CLAUDE.md           — this file
+output/             — legacy location, now gitignored (index.html lives at root)
 ```
 
 ## Tech stack
-Plain HTML/CSS/JS — no framework, no build step, no dependencies. Open `output/index.html` directly in a browser to run locally.
+Plain HTML/CSS/JS — no framework, no build step, no dependencies. Open `index.html` directly in a browser to run locally.
 
 ## Page sections (in order)
 | Section id       | Description |
@@ -71,5 +74,11 @@ To replace the video: upload a new file to Cloudinary and swap the `<source src>
 ## Git / GitHub
 - Repo: https://github.com/phoebe-jarvis/villa-palm
 - Branch: `main`
-- To commit and push changes: `git add output/index.html && git commit -m "message" && git push`
-- The `.MOV` video, `.heic` originals, and `inspo/` folder are all gitignored
+- To commit and push changes: `git add index.html && git commit -m "message" && git push`
+- Gitignored: `.MOV` video, `.heic` originals, `inspo/`, `output/`
+
+## Deployment
+- Platform: Vercel
+- Config: `vercel.json` at project root (sets long-lived cache headers on images and logo)
+- To deploy: push to `main` (auto-deploys if repo is linked) or run `vercel --prod`
+- `index.html` must stay at the project root — Vercel serves it as the entry point
