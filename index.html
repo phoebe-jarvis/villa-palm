@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://js-eu1.hsforms.net/forms/embed/148649279.js" defer></script>
   <style>
     /* ─────────────────────────────────────────
        RESET & BASE
@@ -826,16 +827,8 @@
     .pricing__enquiry p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
 
     .calendar-placeholder {
-      background: var(--stone);
-      border-radius: var(--radius);
-      height: 220px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      font-size: 0.8rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
       margin-bottom: 1.5rem;
     }
 
@@ -1640,9 +1633,6 @@
             <li><span class="icon">🧹</span> Maid service (Mon, Wed, Fri)</li>
             <li><span class="icon">🛏</span> Fresh linen &amp; towels included</li>
             <li><span class="icon">🏖</span> Beach towels provided</li>
-            <li><span class="icon">🚗</span> Airport transfer (on request)</li>
-            <li><span class="icon">🛒</span> Pre-arrival grocery shop (on request)</li>
-            <li><span class="icon">👨‍🍳</span> Private chef (on request)</li>
           </ul>
         </div>
 
@@ -1754,7 +1744,7 @@
           <div style="margin-top:2rem; padding:1.5rem; background:var(--white); border-radius:var(--radius); border-left:3px solid var(--gold);">
             <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.8;">
               <strong style="color:var(--navy);">What's included:</strong> Full villa, all amenities, maid service Mon/Wed/Fri, linen &amp; towels, pool maintenance.<br>
-              <strong style="color:var(--navy);">Not included:</strong> Flights, travel insurance, security deposit (refundable), extras on request (e.g. private chef, airport transfers).
+              <strong style="color:var(--navy);">Not included:</strong> Flights, travel insurance, security deposit (refundable), extras (e.g. private chef).
             </p>
           </div>
         </div>
@@ -1762,7 +1752,9 @@
         <div class="pricing__enquiry">
           <h3>Check your dates</h3>
           <p>Use the calendar below to see availability, or send us an enquiry and we'll get back to you within 24 hours.</p>
-          <div class="calendar-placeholder">[ Availability calendar widget ]</div>
+          <div class="calendar-placeholder">
+            <iframe src="https://calendar.google.com/calendar/embed?src=3ui8m78hrf54oi7t0f23upn4abmv0non%40import.calendar.google.com&ctz=Europe%2FLondon&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=MONTH" style="border:0" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+          </div>
           <a href="#contact" class="btn btn--primary" style="width:100%; text-align:center; display:block;">Send an Enquiry</a>
         </div>
 
@@ -1874,35 +1866,35 @@
         <div class="faq-item">
           <button class="faq-item__question">How many guests can the villa sleep?</button>
           <div class="faq-item__answer">
-            <p>The villa comfortably sleeps 10 guests across 5 bedrooms. We can discuss arrangements for up to 12 with a mix of bedding configurations — just mention this in your enquiry.</p>
+            <p>The villa comfortably sleeps 12 guests across 6 bedrooms. We can discuss arrangements for up to 14 with a mix of bedding configurations — just mention this in your enquiry.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question">What is the minimum stay?</button>
           <div class="faq-item__answer">
-            <p>The minimum stay is 7 nights. During peak season (July and August) we book Saturday to Saturday only. Outside of peak season we can be flexible on arrival and departure days.</p>
+            <p>The minimum stay is 7 nights. We can be flexible on arrival and departure days and check-out times.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question">Is the pool heated?</button>
           <div class="faq-item__answer">
-            <p>The pool is unheated as standard — the Turkish summer keeps the water wonderfully warm from May through October. Heating is available on request for an additional charge during shoulder season.</p>
+            <p>The pool is heated by solar panels at the front of the property. The temperature should be comfortable in the summer months.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question">Are children welcome?</button>
           <div class="faq-item__answer">
-            <p>Absolutely — the villa is ideal for families and groups with children. We have a shallow step entry to the pool, a high chair, travel cots, and can recommend family-friendly restaurants and activities in the area.</p>
+            <p>Absolutely — the villa is ideal for families and groups with children. The pool is all one depth but still suitable for supervised children.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-item__question">Can I hire a private chef?</button>
           <div class="faq-item__answer">
-            <p>Yes. We work with a trusted local chef who can come to the villa for a night or two (or every evening if you prefer). This is a popular add-on for groups who want a special evening without leaving the villa. Enquire for pricing.</p>
+            <p>Yes, we can provide some reccomendations for local private catering. Please flag this to us on the enquiry form if you would like to receive this information.</p>
           </div>
         </div>
 
@@ -1943,7 +1935,7 @@
           <div class="contact__detail">
             <div class="contact__detail-item">
               <span class="icon">📧</span>
-              <span>adamjarvis1066@gmail.com</span>
+              <span>hello@villapalmkalkan.com</span>
             </div>
             <div class="contact__detail-item">
               <span class="icon">📱</span>
@@ -1962,65 +1954,7 @@
 
         <div class="form">
           <h3 class="form__title">Send an enquiry</h3>
-
-          <div class="form__row">
-            <div class="form__group">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" placeholder="Jane" />
-            </div>
-            <div class="form__group">
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" placeholder="Smith" />
-            </div>
-          </div>
-
-          <div class="form__group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="jane@example.com" />
-          </div>
-
-          <div class="form__row">
-            <div class="form__group">
-              <label for="arrival">Arrival Date</label>
-              <input type="date" id="arrival" />
-            </div>
-            <div class="form__group">
-              <label for="departure">Departure Date</label>
-              <input type="date" id="departure" />
-            </div>
-          </div>
-
-          <div class="form__row">
-            <div class="form__group">
-              <label for="guests">Number of Guests</label>
-              <select id="guests">
-                <option value="">Select…</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>10+</option>
-              </select>
-            </div>
-            <div class="form__group">
-              <label for="nights">Approx. Nights</label>
-              <select id="nights">
-                <option value="">Select…</option>
-                <option>7 nights</option>
-                <option>10 nights</option>
-                <option>14 nights</option>
-                <option>Other</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form__group">
-            <label for="message">Anything else we should know?</label>
-            <textarea id="message" placeholder="Tell us about your group, any special requirements, questions about the villa…"></textarea>
-          </div>
-
-          <button type="button" class="form__submit">Send Enquiry →</button>
+          <div class="hs-form-frame" data-region="eu1" data-form-id="fab70ec4-7751-45c5-a448-941702d2873c" data-portal-id="148649279"></div>
         </div>
 
       </div>
