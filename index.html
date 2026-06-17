@@ -1291,6 +1291,14 @@
       font-size: 0.78rem;
     }
 
+    .footer__bottom a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    .footer__bottom a:hover { color: var(--gold); }
+
     @media (max-width: 860px) {
       .footer__inner { grid-template-columns: 1fr 1fr; }
     }
@@ -1912,7 +1920,7 @@
         <div class="step">
           <div class="step__number">3</div>
           <h4>Pay a deposit</h4>
-          <p>Secure your dates with a 30% deposit. Balance due 8 weeks before arrival.</p>
+          <p>Secure your dates with a 30% deposit. Balance due 6 weeks before arrival.</p>
         </div>
 
         <div class="step">
@@ -1977,7 +1985,7 @@
         <div class="faq-item">
           <button class="faq-item__question">What is the cancellation policy?</button>
           <div class="faq-item__answer">
-            <p>The 30% deposit is non-refundable. The balance (due 8 weeks before arrival) is refundable if cancelled more than 8 weeks before the stay. We strongly recommend travel insurance that covers cancellation. Please read our full terms in the booking pack.</p>
+            <p>The 30% deposit is non-refundable. The balance is due 6 weeks before arrival. We strongly recommend travel insurance that covers cancellation. Please read our <a href="/terms-and-conditions">full Booking Terms &amp; Conditions</a>.</p>
           </div>
         </div>
 
@@ -2089,7 +2097,7 @@
 
       <div class="footer__bottom">
         <span>© 2025 Villa Palm. All rights reserved.</span>
-        <span>Privacy Policy &nbsp;·&nbsp; Terms &amp; Conditions</span>
+        <span>Privacy Policy &nbsp;·&nbsp; <a href="/terms-and-conditions">Terms &amp; Conditions</a></span>
       </div>
     </div>
   </footer>
