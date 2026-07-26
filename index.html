@@ -602,9 +602,10 @@
     .gallery__item:nth-child(1) { grid-column: span 7; grid-row: span 2; }
     .gallery__item:nth-child(2) { grid-column: span 5; }
     .gallery__item:nth-child(3) { grid-column: span 5; }
-    .gallery__item:nth-child(4) { grid-column: span 4; }
+    .gallery__item:nth-child(4) { grid-column: 1 / -1; }
     .gallery__item:nth-child(5) { grid-column: span 4; }
     .gallery__item:nth-child(6) { grid-column: span 4; }
+    .gallery__item:nth-child(7) { grid-column: span 4; }
 
     .gallery__img,
     .gallery__placeholder {
@@ -638,6 +639,12 @@
     .gallery__item:nth-child(1) .gallery__placeholder,
     .gallery__item:nth-child(1) .gallery__img { min-height: 430px; }
 
+    .gallery__item--wide .gallery__img {
+      height: clamp(300px, 38vw, 500px);
+      min-height: 0;
+      object-position: center;
+    }
+
     .gallery__caption {
       position: absolute;
       bottom: 0;
@@ -664,11 +671,13 @@
       .gallery__grid { grid-template-columns: 1fr 1fr; }
       .gallery__item:nth-child(n) { grid-column: span 1; }
       .gallery__item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
+      .gallery__item--wide { grid-column: 1 / -1; }
     }
 
     @media (max-width: 560px) {
       .gallery__grid { grid-template-columns: 1fr; }
       .gallery__item:nth-child(n) { grid-column: span 1; }
+      .gallery__item--wide .gallery__img { height: clamp(240px, 70vw, 380px); }
     }
 
     /* ─────────────────────────────────────────
@@ -1519,6 +1528,11 @@
         <div class="gallery__item">
           <img class="gallery__placeholder" src="images/view-from-master-balcony.WebP" alt="Private master balcony" data-lightbox-image data-caption="Private Balcony" />
           <span class="gallery__caption">Private Balcony</span>
+        </div>
+
+        <div class="gallery__item gallery__item--wide">
+          <img class="gallery__img" src="images/villa-palm-pool-deck.jpg" alt="Villa Palm pool deck" data-lightbox-image data-caption="Pool Deck" />
+          <span class="gallery__caption">Pool Deck</span>
         </div>
 
         <div class="gallery__item">
