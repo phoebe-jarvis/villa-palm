@@ -1122,6 +1122,16 @@
       color: rgba(255,255,255,0.7);
     }
 
+    .contact__detail-item--phone,
+    .contact__detail-item--phone a,
+    .contact__detail-item--phone a:visited,
+    .contact__detail-item--phone a:hover,
+    .contact__detail-item--phone a:focus,
+    .contact__detail-item--phone a:active,
+    .contact__detail-item--phone a[x-apple-data-detectors] {
+      color: var(--white) !important;
+      -webkit-text-fill-color: var(--white) !important;
+    }
     .contact__detail-item .icon {
       width: 36px;
       height: 36px;
@@ -2031,7 +2041,7 @@
             </div>
             <div class="contact__detail-item">
               <span class="icon">📱</span>
-              <span>+44 7437 591444</span>
+              <span class="contact__detail-item--phone">+44 7437 591444</span>
             </div>
             <div class="contact__detail-item">
               <span class="icon">📍</span>
